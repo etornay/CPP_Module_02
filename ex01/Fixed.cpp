@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 19:48:27 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/18 17:16:10 by etornay-         ###   ########.fr       */
+/*   Updated: 2024/07/19 18:39:06 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Fixed::Fixed(const float f)
 	value = roundf(f * (1 << bits));
 }
 
-Fixed &Fixed::operator=(const Fixed &other)
+Fixed &Fixed::operator = (const Fixed &other)
 {
 	if (this != &other)
 		value = other.value;
@@ -71,6 +71,5 @@ float Fixed::toFloat(void) const
 
 std::ostream &operator << (std::ostream &out, const Fixed &nbr)
 {
-	out << nbr.toFloat();
-	return (out);
+	return (out << nbr.toFloat());
 }

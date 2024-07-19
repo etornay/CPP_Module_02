@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 15:58:52 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/18 17:28:52 by etornay-         ###   ########.fr       */
+/*   Updated: 2024/07/19 17:49:21 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ Fixed::~Fixed(void)
 {
 	std::cout << "Destructor called" << std::endl;
 }
-Fixed &Fixed::operator=(const Fixed &other)
+Fixed &Fixed::operator = (const Fixed &other)
 {
 	if (this != &other)
 		value = other.value;

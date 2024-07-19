@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 16:03:57 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/15 19:33:33 by etornay-         ###   ########.fr       */
+/*   Updated: 2024/07/19 15:01:30 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Fixed
 	public:
 			Fixed(void);
 			Fixed(const Fixed &copy);
-			Fixed &operator=(const Fixed &other);
+			Fixed &operator = (const Fixed &other);
 			~Fixed(void);
 			
 			int getRawBits(void) const;
