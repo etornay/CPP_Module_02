@@ -6,16 +6,16 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 17:48:15 by etornay-          #+#    #+#             */
-/*   Updated: 2024/07/18 17:49:52 by etornay-         ###   ########.fr       */
+/*   Updated: 2024/07/19 20:12:00 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void )
+int main(void)
 {
 Fixed a;
-Fixed const b( Fixed(5.05f) * Fixed(2));
+Fixed const b(Fixed(5.05f) * Fixed(2));
 std::cout << a << std::endl;
 std::cout << ++a << std::endl;
 std::cout << a << std::endl;
